@@ -1,0 +1,99 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+/* Parallax scrolling -- apply to all images*/
+.landingImg, .img2 {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.landingImg {
+	height: 100vh;
+	width: 100vw;
+	/*min-height and width allow whole image to show on mobile devices*/
+	min-height: 50vw;
+	min-width: 50vw;
+	margin: auto;
+	background-image: url("img/tj-holowaychuk-61722.jpg");
+	z-index: -10;
+}
+
+/* Transparent cover in front of landing image*/
+.landingImgOverlay {
+	position: absolute;
+	background-color: rgba(100,100,100,.3);
+	height: 100vh;
+	width: 100vw;
+	z-index: -5;
+}
+
+.imgText {
+	position: absolute;
+	height: 25vh;
+	width: 40vw;
+	left: 50%;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	/*border: .5vw solid white;*/
+	color: white;
+	font-size: 2vw;
+	text-align: center;
+	z-index: 0;
+}
+
+.imgText h1 {
+	border: .5vw solid white;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+}
+
+.section h2 {
+	margin-top: 0;
+}
+
+.section {
+	text-align: center;
+	padding: 2vw 15vw 2vw 15vw;
+	line-height: 
+}
+
+.img2 {
+	height: 75vh;
+	width: 100vw;
+	background-image: url("img/daria-sukhorukova-496.jpg");
+}
+
+.imgOverlay {
+	position: absolute;
+	background-color: rgba(100,100,100,.3);
+	height: 75vh;
+	width: 100vw;
+	z-index: -5;
+}
+
+video {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	left: 0;
+	right: 0;
+	min-height: 50vw;
+	min-width: 50vw;
+	margin: auto;
+	z-index: -10;
+	opacity: 1;
+}
+/*<!-- width="100vw" height="75vh" -->*/
+
+/* --- Media Queries --- */
